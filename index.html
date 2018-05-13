@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | That Which Cannot Be Contained</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Web.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 600px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">That Which Cannot Be Contained</div>
+        </br>
+</br>
+        <p>
+Dodge bullets and destroy enemies in this top-down-dodge-em-up-bullet-hell-match-3 combo.
+</p>
+</br>
+     <p>
+Instructions
+</p>
+</br>
+<p>
+- Hold down the grab button while aiming at a block (from any distance).
+</p>
+<p>
+- Release the grab button to throw the block (in any direction).
+</p>
+<p>
+- Combine 2 red or 3 magenta blocks for explosive results!
+</p>
+<p>
+- Adjacent adversaries will be terminated (1 point for each!)
+</p>
+</br>
+<p>
+Keyboard:
+</p>
+</br>
+<p>
+WASD or QZSD = movement
+</p>
+<p>
+Arrows = aiming
+</p>
+<p>
+Spacebar (hold/release) = grab/throw block
+</p>
+<p>
+R = restart
+</p>
+<p>
+M = mute music
+</p>
+</br>
+<p>
+Gamepad (360):
+</p>
+</br>
+<p>
+Left stick = movement
+</p>
+<p>
+Right stick = aiming
+</p>
+<p>
+Left or right bumper (hold/release) = grab/throw block
+</p>
+</br>
+<p>
+Start or Back = restart
+</p>
+      </div>
+    </div>
+  </body>
+</html>
